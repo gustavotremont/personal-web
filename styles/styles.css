@@ -1,0 +1,88 @@
+/* Variables */
+:root {
+    --primary-color: #000000;
+    --secundary-color: #DB2225;
+    --terciary-color: #F9C88F;
+
+    --primary-color-alt: #030202;
+    --secundary-color-alt: #7F2A17;
+    --terciary-color-alt: #DAD5C0;
+
+    --kid-a-blue: #2D4E7E;
+    --kid-a-grey: #A2A49F;
+
+    --width-desktop: 1440px;
+    --width-laptop: 1024px;
+    --width-table: ;
+    --width-mobile: ;
+}
+
+@font-face {
+    font-family: bdplakatt;
+    src: url(../assets/fonts/BD_Plakatbau.otf);
+}
+
+@font-face {
+    font-family: radiohead;
+    src: url(../assets/fonts/radiohead.ttf);
+}
+
+/* Valores iniciales del body y main*/
+body{
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+main#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/* Estilos del Header y del navBar*/
+header#header {
+    background-color: var(--secundary-color);
+    height: 70px;
+}
+
+nav {
+    height: inherit;
+}
+
+ul.flex-header{
+    display: flex;
+    align-items: baseline;
+}
+
+ul.nav-list{
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    list-style-type: none;
+}
+
+ul.nav-list li {
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+ul.nav-list li.home {
+    flex: 1;
+    padding: 0;
+    font-size: 60px;
+    font-family: bdplakatt;
+}
+
+ul.nav-list li > a {
+    color: var(--primary-color);
+    text-decoration: none;
+} 
+
+/* Estilos del Home */
+
+/* Clases generales */
+.margin-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
