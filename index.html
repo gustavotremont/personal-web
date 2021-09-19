@@ -4,28 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>plantilla</title>
+    <title>Radiohead</title>
 
+    <link rel="icon" type="image/png" href="/assets/images/radiohead-logo.png"/>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/4429754072.js" crossorigin="anonymous"></script>
+
+    <style>
+        article.home-article, footer div>h3 {
+            font-family: 'Alatsi';
+        }
+    </style>
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="home-header">
             <nav class="margin-wrap">
                 <ul class="nav-list flex-header">
-                    <li class="home"><a href="#">RADIOHEAD</a></li>
-                    <li><a href="#">Biografia</a></li>
-                    <li><a href="#">Portafolio</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li class="home home-item"><a href="index.html">RADIOHEAD</a></li>
+                    <li class="home-item"><a href="pages/biography.html">Biography</a></li>
+                    <li class="home-item"><a href="pages/music_video.html">Music/Video</a></li>
+                    <li class="home-item"><a href="pages/subscribe.html">Subscribe</a></li>
                 </ul>
             </nav>   
     </header>
 
     <main id="main">
         <section class="margin-wrap">
-            <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr"><a href="https://t.co/sMZGB0eE7V">https://t.co/sMZGB0eE7V</a><br>We humbly submit KID A MNESIA to you.<br>It&#39;s a coming of age for Kid A &amp; Amnesiac and it&#39;s joined by a new album, Kid Amnesiae, a memory palace of half-remembered, half-forgotten sessions &amp; unreleased material.<br>All three come out together on November 5th. <a href="https://t.co/V5Ms5iRUKl">pic.twitter.com/V5Ms5iRUKl</a></p>&mdash; Radiohead (@radiohead) <a href="https://twitter.com/radiohead/status/1435256713163198465?ref_src=twsrc%5Etfw">September 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <!-- <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">KID A MNESIA EXHIBITION<br>created from the original artwork and multi-tracks<a href="https://t.co/9qy0UjaFVs">https://t.co/9qy0UjaFVs</a><br>coming in November <a href="https://t.co/Lj5u8wTADR">pic.twitter.com/Lj5u8wTADR</a></p>&mdash; Radiohead (@radiohead) <a href="https://twitter.com/radiohead/status/1436074594377637891?ref_src=twsrc%5Etfw">September 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             
+            <article class="home-article">
+                <h1><a href="https://kida-mnesia.com">kida-mnesia.com</a></h1>
+                <h2>We humbly submit KID A MNESIA to you.</h2>
+                <p>It's a coming of age for Kid A & Amnesiac and it's joined by a new album, Kid Amnesiae,</p>
+                <p>a memory palace of half-remembered, half-forgotten sessions & unreleased material.</p>
+                <h3>All three come out together on November 5th.</h3>
+
+                <video width="1024" height="564" controls autoplay loop>
+                    <source src="./assets/videos/kidamnesia-presentation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
         </section>
     </main>
+
+    <footer>
+        <div class="margin-wrap">
+            <h3>Radiohead, All Rights Reserved.</h3>
+            <section class="footer-icons">
+                <a href="https://www.youtube.com/radiohead"><i class="fab fa-youtube"></i></a>
+                    
+                <a href="https://www.deezer.com/es/artist/399"><i class="fab fa-deezer"></i></a>
+                                    
+                <a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"><i class="fab fa-spotify"></i></a>
+                
+                <a href="https://twitter.com/radiohead"><i class="fab fa-twitter"></i></a>
+                
+                <a href="https://www.instagram.com/radiohead/"><i class="fab fa-instagram"></i></a>
+                
+                <a href="https://www.tiktok.com/@radiohead?"><i class="fab fa-tiktok"></i></a>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
