@@ -6,10 +6,10 @@
 
     --primary-color-alt: #030202;
     --secundary-color-alt: #7F2A17;
-    --terciary-color-alt: #DAD5C0;
+    --terciary-color-alt: #dad5c0;
 
     --kid-a-blue: #2D4E7E;
-    --kid-a-grey: #A2A49F;
+    --kid-a-grey: #a2a49f;
 
     --width-desktop: 1440px;
     --width-laptop: 1024px;
@@ -28,6 +28,10 @@
 }
 
 /* Valores iniciales del body y main*/
+* ::selection{
+    background-color: var(--secundary-color-alt);
+}
+
 body{
     margin: 0;
     background-color: var(--primary-color);
@@ -37,17 +41,16 @@ main#main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 30px;
 }
 
 /* Estilos del Header y del navBar*/
-header#header {
-    background-color: var(--secundary-color);
-    height: 70px;
+header {
+    background-color: var(--primary-color);
+    padding-bottom: 10px;
 }
 
-nav {
-    height: inherit;
+header.home-header {
+    background-color: var(--secundary-color);
 }
 
 ul.flex-header{
@@ -58,13 +61,23 @@ ul.flex-header{
 ul.nav-list{
     margin: 0;
     padding: 0;
-    height: inherit;
     list-style-type: none;
 }
 
 ul.nav-list li {
+    display: block;
     padding: 0 10px;
-    font-size: 25px;
+    font-size: 35px;
+    font-family: bdplakatt;
+    letter-spacing: 2px;
+}
+
+ul.nav-list li:hover:not(.active) {
+    text-decoration: underline;
+}
+
+ul.nav-list li.active{
+    text-decoration: underline;
 }
 
 ul.nav-list li.home {
@@ -72,17 +85,101 @@ ul.nav-list li.home {
     padding: 0;
     font-size: 60px;
     font-family: bdplakatt;
+    letter-spacing: 0;
+}
+
+ul.nav-list li.home:hover {
+    text-decoration: none;
 }
 
 ul.nav-list li > a {
-    color: var(--primary-color);
+    color: var(--secundary-color);
     text-decoration: none;
 } 
 
+ul.nav-list li.home-item > a {
+    color: var(--primary-color);
+}
+
+/* Estilos del Footer */
+footer {
+    background: linear-gradient(to right, rgba(3,2,2,1), rgba(45,78,126,1), rgba(127,42,23,1), rgba(3,2,2,1));
+    /* background: linear-gradient(90deg, rgba(218,213,192,1) 0%, rgba(45,78,126,1) 35%, rgba(127,42,23,1) 100%); */
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+footer h3 {
+    margin: 5px 0 15px;
+    color: var(--primary-color-alt);
+}
+
+section.footer-icons i.fab {
+    padding: 0 50px;
+    font-size: 30px;
+}
+
+section.footer-icons i.fa-youtube {
+    color: #FF0000;
+}
+section.footer-icons i.fa-deezer {
+    color: #ffed00;
+}
+section.footer-icons i.fa-spotify {
+    color: #1DB954;
+}
+section.footer-icons i.fa-twitter {
+    color: #00acee;
+}
+section.footer-icons i.fa-instagram {
+    color: #cd486b;
+}
+section.footer-icons i.fa-tiktok {
+    color: #00f2ea;
+}
+
 /* Estilos del Home */
+article.home-article *{
+    color: var(--terciary-color-alt);
+}
+
+article.home-article h1 > a {
+    color: var(--secundary-color);
+    font-size: 45px;
+    font-family: bdplakatt;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+/* Estilos de biography.html */
+main section.biography-background {
+    background-image: url(../assets/images/biography-background.png);
+    background-size: 100%;
+}
+
+section.biography-background section.biography-text-background {
+    margin-top: 200px;
+    background-color: rgb(3, 2, 2, 0.8);
+}
+
+section.biography-text-background article.biography-text {
+    padding: 20px 50px;
+    color: var(--terciary-color-alt);
+}
+
+article.biography-text h1 {
+    color: var(--secundary-color);
+    font-family: bdplakatt;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
 
 /* Clases generales */
 .margin-wrap {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+p {
+    font-size: 18px;
 }
