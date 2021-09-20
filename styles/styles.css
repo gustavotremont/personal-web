@@ -27,45 +27,47 @@
     src: url(../assets/fonts/radiohead.ttf);
 }
 
-/* Valores iniciales del body y main*/
+/* Valores iniciales*/
 * ::selection{
     background-color: var(--secundary-color-alt);
 }
 
 body{
-    margin: 0;
     background-color: var(--primary-color);
-}
-
-main#main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 /* Estilos del Header y del navBar*/
-header {
+nav.navbar {
     background-color: var(--primary-color);
-    padding-bottom: 10px;
+    border-bottom: 1px solid var(--secundary-color);
 }
 
-header.home-header {
+nav.home-navbar {
     background-color: var(--secundary-color);
 }
 
-ul.flex-header{
-    display: flex;
+section.navbar-align {
+    justify-content: space-between;
     align-items: baseline;
 }
 
+section.logo-item a {
+    color: var(--secundary-color);
+    font-size: 60px;
+    font-family: bdplakatt;
+    text-decoration: none;
+}
+
+section.logo-item a.home-item {
+    color: var(--primary-color);
+}
+
 ul.nav-list{
-    margin: 0;
-    padding: 0;
+    display: flex;
     list-style-type: none;
 }
 
 ul.nav-list li {
-    display: block;
     padding: 0 10px;
     font-size: 35px;
     font-family: bdplakatt;
@@ -80,18 +82,6 @@ ul.nav-list li.active{
     text-decoration: underline;
 }
 
-ul.nav-list li.home {
-    flex: 1;
-    padding: 0;
-    font-size: 60px;
-    font-family: bdplakatt;
-    letter-spacing: 0;
-}
-
-ul.nav-list li.home:hover {
-    text-decoration: none;
-}
-
 ul.nav-list li > a {
     color: var(--secundary-color);
     text-decoration: none;
@@ -102,39 +92,41 @@ ul.nav-list li.home-item > a {
 }
 
 /* Estilos del Footer */
-footer {
+footer ul.footer-list {
+    flex-direction: column;
+    align-items: center;
     background: linear-gradient(to right, rgba(3,2,2,1), rgba(45,78,126,1), rgba(127,42,23,1), rgba(3,2,2,1));
-    /* background: linear-gradient(90deg, rgba(218,213,192,1) 0%, rgba(45,78,126,1) 35%, rgba(127,42,23,1) 100%); */
-    text-align: center;
+    margin: 0;
     padding: 10px 0 20px;
+    list-style-type: none;
 }
 
-footer h3 {
+ul.footer-list li.text-footer {
     margin: 5px 0 15px;
     color: var(--primary-color-alt);
 }
 
-section.footer-icons i.fab {
+li.footer-icons i.fab {
     padding: 0 50px;
     font-size: 30px;
 }
 
-section.footer-icons i.fa-youtube {
+li.footer-icons i.fa-youtube {
     color: #FF0000;
 }
-section.footer-icons i.fa-deezer {
+li.footer-icons i.fa-deezer {
     color: #ffed00;
 }
-section.footer-icons i.fa-spotify {
+li.footer-icons i.fa-spotify {
     color: #1DB954;
 }
-section.footer-icons i.fa-twitter {
+li.footer-icons i.fa-twitter {
     color: #00acee;
 }
-section.footer-icons i.fa-instagram {
+li.footer-icons i.fa-instagram {
     color: #cd486b;
 }
-section.footer-icons i.fa-tiktok {
+li.footer-icons i.fa-tiktok {
     color: #00f2ea;
 }
 
@@ -151,6 +143,10 @@ article.home-article h1 > a {
     letter-spacing: 3px;
 }
 
+article.home-article p {
+    margin: 0;
+}
+
 /* Estilos de biography.html */
 main section.biography-background {
     background-image: url(../assets/images/biography-background.png);
@@ -158,8 +154,8 @@ main section.biography-background {
 }
 
 section.biography-background section.biography-text-background {
-    margin-top: 200px;
     background-color: rgb(3, 2, 2, 0.8);
+    margin-top: 200px;
 }
 
 section.biography-text-background article.biography-text {
@@ -175,9 +171,16 @@ article.biography-text h1 {
 }
 
 /* Clases generales */
-.margin-wrap {
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center {
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 p {
