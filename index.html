@@ -7,6 +7,7 @@
     <title>Radiohead</title>
 
     <link rel="icon" type="image/png" href="/assets/images/radiohead-logo.png"/>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
 
@@ -19,52 +20,62 @@
     </style>
 </head>
 <body>
-    <header id="header" class="home-header">
-            <nav class="margin-wrap">
-                <ul class="nav-list flex-header">
-                    <li class="home home-item"><a href="index.html">RADIOHEAD</a></li>
+    
+    <header>
+        <nav class="home-navbar flex-container">
+            <section class="flex-center navbar-align">
+                <section class="logo-item">
+                    <a class="home-item" href="index.html">RADIOHEAD</a>
+                </section>
+                <ul class="nav-list">
                     <li class="home-item"><a href="pages/biography.html">Biography</a></li>
                     <li class="home-item"><a href="pages/music_video.html">Music/Video</a></li>
                     <li class="home-item"><a href="pages/subscribe.html">Subscribe</a></li>
-                </ul>
-            </nav>   
+                </ul>                    
+            </section>
+        </nav>
     </header>
 
-    <main id="main">
-        <section class="margin-wrap">
-            
-            <article class="home-article">
-                <h1><a href="https://kida-mnesia.com">kida-mnesia.com</a></h1>
-                <h2>We humbly submit KID A MNESIA to you.</h2>
-                <p>It's a coming of age for Kid A & Amnesiac and it's joined by a new album, Kid Amnesiae,</p>
-                <p>a memory palace of half-remembered, half-forgotten sessions & unreleased material.</p>
-                <h3>All three come out together on November 5th.</h3>
-
-                <video width="1024" height="564" controls autoplay loop>
-                    <source src="./assets/videos/kidamnesia-presentation.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </article>
+    <main>
+        <section class="flex-container">
+            <section class="flex-center">
+                <article class="home-article">
+                    <h1><a href="https://kida-mnesia.com">kida-mnesia.com</a></h1>
+                    <h2>We humbly submit KID A MNESIA to you.</h2>
+                    <p>It's a coming of age for Kid A & Amnesiac and it's joined by a new album, Kid Amnesiae,</p>
+                    <p>a memory palace of half-remembered, half-forgotten sessions & unreleased material.</p>
+                    <h3>All three come out together on November 5th.</h3>
+    
+                    <video width="1024" height="564" controls autoplay loop>
+                        <source src="./assets/videos/kidamnesia-presentation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </article>
+            </section>
         </section>
     </main>
 
     <footer>
-        <div class="margin-wrap">
-            <h3>Radiohead, All Rights Reserved.</h3>
-            <section class="footer-icons">
-                <a href="https://www.youtube.com/radiohead"><i class="fab fa-youtube"></i></a>
+        <section class="flex-container">
+            <ul class="flex-center footer-list">
+                <li class="text-footer">
+                    <h3>Radiohead, All Rights Reserved.</h3>
+                </li>
+                <li class="footer-icons">
+                    <a href="https://www.youtube.com/radiohead"><i class="fab fa-youtube"></i></a>
+                        
+                    <a href="https://www.deezer.com/es/artist/399"><i class="fab fa-deezer"></i></a>
+                                        
+                    <a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"><i class="fab fa-spotify"></i></a>
                     
-                <a href="https://www.deezer.com/es/artist/399"><i class="fab fa-deezer"></i></a>
-                                    
-                <a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"><i class="fab fa-spotify"></i></a>
-                
-                <a href="https://twitter.com/radiohead"><i class="fab fa-twitter"></i></a>
-                
-                <a href="https://www.instagram.com/radiohead/"><i class="fab fa-instagram"></i></a>
-                
-                <a href="https://www.tiktok.com/@radiohead?"><i class="fab fa-tiktok"></i></a>
-            </section>
-        </div>
+                    <a href="https://twitter.com/radiohead"><i class="fab fa-twitter"></i></a>
+                    
+                    <a href="https://www.instagram.com/radiohead/"><i class="fab fa-instagram"></i></a>
+                    
+                    <a href="https://www.tiktok.com/@radiohead?"><i class="fab fa-tiktok"></i></a>
+                </li>
+            </ul>
+        </section>
     </footer>
 </body>
 </html>
