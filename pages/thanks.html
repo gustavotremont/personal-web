@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscribe</title>
+    <title>Thanks for Join</title>
 
     <link rel="icon" type="image/png" href="../assets/images/radiohead-logo.png"/>
     <link rel="stylesheet" href="../styles/normalize.css">
@@ -12,13 +12,17 @@
     <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
 
     <style>
-        section form.form-body {
+        h2, p {
             font-family: 'Alatsi';
             color: #dad5c0;
         }
+
+        h2 {
+           font-size:25px; 
+        }
     </style>
 
-    <script src="https://kit.fontawesome.com/4429754072.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/4429754072.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -30,7 +34,7 @@
                 <ul class="nav-list">
                     <li><a href="biography.html">Biography</a></li>
                     <li><a href="music_video.html">Music/Video</a></li>
-                    <li class="active"><a href="subscribe.html">Subscribe</a></li>
+                    <li><a href="subscribe.html">Subscribe</a></li>
                 </ul>                    
             </section>
         </nav>
@@ -39,40 +43,8 @@
     <main>
         <section class="flex-container">
             <section class="flex-center">
-                <h1 class="title">Subscribe to our newsletter</h1>
-                <form onsubmit="confirmSubmit()" class="form-body" action="thanks.html">
-                    <div>
-                        <label for="first-name">Name</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="FIRST NAME">
-                    </div>
-
-                    <div>
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" placeholder="LAST NAME">
-                    </div>
-
-                    <div>
-                        <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="EMAIL">
-                    </div>
-
-                    <div>
-                        <label for="birthday">birthday</label>
-                        <input type="date" name="birthday" id="birthday" placeholder="BIRTHDAY">
-                    </div>
-
-                    
-
-                    <div class="privacy-police">
-                        <input type="checkbox" name="privacy-police" id="privacy-police">
-                        <label for="privacy-police" >I accept the <a href="#" target="_blank" style="color: #F9C88F;">privacy policy</a></label>
-                    </div>
-                    
-                    <div class="form-buttons">
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
-                    </div>
-                </form>
+                <h2>thanks For Joining</h2>
+                <p>We will send the information to your email</p>
             </section>
         </section>
     </main>
@@ -99,12 +71,5 @@
             </ul>
         </section>
     </footer>
-
-    <script>
-        const confirmSubmit = () => {
-            let name = document.getElementById("first-name").value;
-            alert("Thanks for Join " + name);
-        }
-    </script>
 </body>
 </html>
