@@ -155,20 +155,20 @@ li.footer-icons i.fa-tiktok {
 }
 
 /* ----------------------------------------------------------------------------- Estilos del Home ------------------------------------------------------------------ */
+article.home-article {
+    width: 100%;
+}
+
 article.home-article *{
     color: var(--terciary-color-alt);
 }
 
-/* article.home-article h1 > a {
-    color: var(--secundary-color);
-    font-size: 45px;
-    font-family: bdplakatt;
-    text-decoration: none;
-    letter-spacing: 3px;
-} */
-
 article.home-article p {
     margin: 0;
+}
+
+article.home-article video {
+    width: 100%;
 }
 
 /* ----------------------------------------------------------------------------- Estilos de biography.html ------------------------------------------------------------ */
@@ -179,7 +179,6 @@ main section.biography-background {
 
 section.biography-background section.biography-text-background {
     background-color: rgb(3, 2, 2, 0.8);
-    margin-top: 200px;
 }
 
 section.biography-text-background article.biography-text {
@@ -281,7 +280,6 @@ li.album-media>div.album-promo audio {
 /* ---------------------------------------------------------------------------------- Estilos de subscribe.html --------------------------------------------------- */
 form.form-body{
     border: 1px solid var(--terciary-color);
-    padding: 20px 100px;
     margin-bottom: 30px;
 }
 
@@ -309,18 +307,87 @@ form.form-body>div:not(.privacy-police, .form-buttons) input {
 /* ------------------------------------------------------------------------------------ Media querys --------------------------------------------------------------  */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    
-}
+    .flex-center {
+        max-width: 360px;
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+    section.navbar-align {
+        flex-direction: column;
+        align-items: center !important;
+    }
 
+    ul.nav-list li {
+        font-size: 25px;
+    }
+
+    li.footer-icons i.fab {
+        padding: 0px 15px;
+        font-size: 25px;
+    }
+
+    article.home-article video {
+        height: 270px;
+    }
+
+    main section.biography-background {
+        background-repeat: round;
+    }
+
+    article.biography-text p {
+        font-size: 13px;
+    }
+
+    section.biography-background section.biography-text-background {
+        margin-top: 54px;
+    }
+
+    section.biography-text-background article.biography-text {
+        padding: 10px 8px;
+    }
+
+    ul.album-container li.album-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li.album-media>div.album-promo audio {
+        width: 370px;
+    }
+
+    li.album-media>div.album-video iframe {
+        width: 370px;
+    }
+
+    form.form-body {
+        padding: 20px 20px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .flex-center {
-        max-width: 600px;
+        max-width: 700px;
+    }
+
+    article.home-article video {
+        height: 410px;
+    }
+
+    section.biography-background section.biography-text-background {
+        margin-top: 95px;
+    }
+    
+    main section.biography-background {
+        background-repeat: round;
+    }
+
+    ul.album-container li.album-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form.form-body {
+        padding: 20px 50px;
     }
 }
 
@@ -329,10 +396,39 @@ form.form-body>div:not(.privacy-police, .form-buttons) input {
     .flex-center {
         max-width: 900px;
     }
+
+    article.home-article video {
+        height: 564px;
+    }
+
+    section.biography-background section.biography-text-background {
+        margin-top: 160px;
+    }
+
+    article.biography-text p {
+        font-size: 18px;
+    }
+
+    ul.album-container li.album-media {
+        flex-direction: row;
+        align-items: unset;
+    }
+
+    form.form-body {
+        padding: 20px 100px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
     .flex-center {
         max-width: 1200px;
+    }
+
+    main section.biography-background {
+        background-repeat: no-repeat;
+    }
+
+    section.biography-background section.biography-text-background {
+        margin-top: 190px;
     }
 }
